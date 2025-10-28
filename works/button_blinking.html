@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- intergrity is used for security reasons -->
+
+
+    <script>
+        $(document).ready(function () {
+            $(".main").css({
+                "display": "flex",
+                "justify-content": "center",
+                "align-item": "center",
+                
+            })
+            $(".btn").css({
+                "height": "100px",
+                "width": "100px",
+                "background-color": "black",
+                "border-radius": "35px",
+                "color": "white"
+
+
+            })
+            $(".btn").hover(
+
+                function () {//WHILE click
+                    $(this).css({
+                        "cursor": "pointer",
+                        "background-color": "white",
+                        "color": "black"
+
+                    });
+                },
+                function () {//WHILE click
+                    $(this).css({
+                        "cursor": "pointer",
+                        "background-color": "black",
+                        "color": "white"
+
+                    });
+                }
+            );
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="main">
+        <button class="btn">Button</button>
+    </div>
+
+
+</body>
+
+</html>

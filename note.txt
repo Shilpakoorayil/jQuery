@@ -1,0 +1,49 @@
+jQuery
+
+js library, designed to simplyfy HTML document
+
+>  Write less,do more
+> It support animation effects ,[ajax (asyn js and xml)-support]
+> Ajax called with less code
+> ajax: techique is used in web development to send and receive from server asynchronially
+        without re-loading the entire web page
+> Support all browsers
+> DOM manupulation and traversal
+
+syntax:
+
+$(selector).action()
+$ -> jQuery object
+selector : what you want to select (id,class)
+action() : what you want to do It
+document.ready : ensure jquery run after the HTML has loaded.
+
+$(document).ready(function(){
+    alert("hi);
+})
+
+
+Selecting Elements :
+
+
+
+
+//.......................................
+Very Impt
+> first copy te link in head tag
+
+work:
+button
+bg:  balck
+text : white
+
+hover
+bg: white
+text: white
+//........................................
+
+BASIC EVENTS:
+
+> click
+> dblclick
+
