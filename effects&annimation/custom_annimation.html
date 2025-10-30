@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- intergrity is used for security reasons -->
+
+<script>
+    $(document).ready(function(){
+        $("#animateBtn").click(function(){
+            $("#box").animate({
+                width:"300px",
+                opacity:0.5,
+            },2000);//run in 2seconds
+        })
+        //.........................
+            $("#animateBtn1").click(function(){
+            $("#box").animate({
+                width:"100px",
+                opacity:1,
+            },2000);//run in 2seconds
+        })
+
+
+    })
+</script>
+</head>
+<body>
+    <div id="box" style="width: 100px; height:100px ;background-color: red;"></div><br>
+    <button id="animateBtn">Animate</button>
+
+     <button id="animateBtn1">Reduce</button>
+</body>
+</html>

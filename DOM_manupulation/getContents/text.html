@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- intergrity is used for security reasons -->
+
+</head>
+<body>
+    <p id="para">this is a<b>paragraph</b> with bold text</p>
+    <button id="getText">Get Text</button>
+
+    <script>
+        $("#getText").click(function(){
+            let Contents =$("#para").text();
+            alert("Text content is : " + Contents);
+        })
+    </script>
+
+
+    
+</body>
+</html>
+
+
+<!-- OUTPUT:
+Text content is : this is aparagraph with bold text
+ -->
+
+

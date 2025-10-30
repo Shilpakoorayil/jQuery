@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- intergrity is used for security reasons -->
+<script>
+    $(document).ready(function(){
+        //slide up
+        $("#slide_up").click(function(){
+            $("#menu").slideUp();
+
+        });
+         $("#slide_down").click(function(){
+            $("#menu").slideDown();
+
+        });
+         $("#slide_toggle").click(function(){
+            $("#menu").slideToggle();
+
+        });
+    })
+</script>
+</head>
+<body>
+    <div id="menu" style="background-color: lightcoral; padding: 20px;">
+        <p>This is menu content</p>
+    </div>
+
+    <button id="slide_up">Slide Up</button>
+    <button id="slide_down">Slide Down</button>
+    <button id="slide_toggle">Slide Toggle</button>
+</body>
+</html>

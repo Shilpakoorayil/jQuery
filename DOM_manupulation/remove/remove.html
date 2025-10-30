@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- intergrity is used for security reasons -->
+
+</head>
+<body>
+    <div id="para">
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <button id="removeBtn">Remove Elements</button>
+
+
+
+    <script>
+        $("#removeBtn").click(function(){
+            $("#para").remove();//entire element will remove
+        })
+    </script>
+</body>
+</html>
+
+
+<!-- REMOVE:
+
+Both Contents and div remove completely -->
